@@ -1,0 +1,7 @@
+name: VehiclesPickupAddon
+version: ${project.version}
+main: jp.ataru.VehiclesPickupAddon
+api-version: 1.14
+depend: [ Vehicles ]
+authors: [ Ataru ]
+description: An addon made for the Vehicles plugin by a fellow member of the same community, with love!
