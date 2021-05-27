@@ -36,82 +36,84 @@ public final class VehiclesPickupAddon extends JavaPlugin {
         @EventHandler
         public void noVehiclePickup(VehiclePickupEvent e) {
             reloadConfig();
-            switch (e.getVehicleType()) {
-                case BIKE:
-                    if (!config.getBoolean("allowBikePickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case BROOM:
-                    if (!config.getBoolean("allowBroomPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case CAR:
-                    if (!config.getBoolean("allowCarPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case HELICOPTER:
-                    if (!config.getBoolean("allowHelicopterPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case PARACHUTE:
-                    if (!config.getBoolean("allowParachutePickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case PLANE:
-                    if (!config.getBoolean("allowPlanePickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case RAFT:
-                    if (!config.getBoolean("allowRaftPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case SUBMARINE:
-                    if (!config.getBoolean("allowSubmarinePickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case TANK:
-                    if (!config.getBoolean("allowTankPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case TRAIN:
-                    if (!config.getBoolean("allowTrainPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case HOVER_BIKE:
-                    if (!config.getBoolean("allowHoverbikePickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case SPORT_BIKE:
-                    if (!config.getBoolean("allowSportbikePickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case RACING_CAR:
-                    if (!config.getBoolean("allowRacingCarPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case TRACTOR:
-                    if (!config.getBoolean("allowTractorPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
-                case DRILL:
-                    if (!config.getBoolean("allowDrillPickup")) {
-                        e.setCancelled(true);
-                    }
-                    break;
+            if (!e.getPlayer().hasPermission("vehicles.pickupoverride")) {
+                switch (e.getVehicleType()) {
+                    case BIKE:
+                        if (!config.getBoolean("allowBikePickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case BROOM:
+                        if (!config.getBoolean("allowBroomPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case CAR:
+                        if (!config.getBoolean("allowCarPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case HELICOPTER:
+                        if (!config.getBoolean("allowHelicopterPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case PARACHUTE:
+                        if (!config.getBoolean("allowParachutePickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case PLANE:
+                        if (!config.getBoolean("allowPlanePickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case RAFT:
+                        if (!config.getBoolean("allowRaftPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case SUBMARINE:
+                        if (!config.getBoolean("allowSubmarinePickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case TANK:
+                        if (!config.getBoolean("allowTankPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case TRAIN:
+                        if (!config.getBoolean("allowTrainPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case HOVER_BIKE:
+                        if (!config.getBoolean("allowHoverbikePickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case SPORT_BIKE:
+                        if (!config.getBoolean("allowSportbikePickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case RACING_CAR:
+                        if (!config.getBoolean("allowRacingCarPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case TRACTOR:
+                        if (!config.getBoolean("allowTractorPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                    case DRILL:
+                        if (!config.getBoolean("allowDrillPickup")) {
+                            e.setCancelled(true);
+                        }
+                        break;
+                }
             }
         }
     }
