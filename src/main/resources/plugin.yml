@@ -1,7 +1,7 @@
 name: VehiclesPickupAddon
 version: ${project.version}
-main: jp.ataru.VehiclesPickupAddon
-api-version: 1.14
+main: jp.marisa.VehiclesPickupAddon
+api-version: 1.18
 depend: [ Vehicles ]
-authors: [ Ataru ]
-description: An addon made for the Vehicles plugin by a fellow member of the same community, with love!
+authors: [Marisa]
+description: An addon made for the Vehicles plugin that allows for toggling of vehicle pickup.
