@@ -16,9 +16,9 @@ public final class VehiclesPickupAddon extends JavaPlugin {
     public void onEnable() {
         long currentTime = System.currentTimeMillis();
 
-        for (VehicleType vehicleType : VehicleType.values()) {
+        for (VehicleType vehicleType : VehicleType.values())
             config.addDefault("allow" + vehicleType.getConfigName() + "Pickup", true);
-        }
+
         config.options().copyDefaults(true);
         saveConfig();
         Bukkit.getPluginManager().registerEvents(new Listeners(), this);
