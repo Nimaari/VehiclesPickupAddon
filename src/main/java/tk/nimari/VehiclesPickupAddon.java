@@ -1,4 +1,4 @@
-package jp.marisa;
+package tk.nimari;
 
 import es.pollitoyeye.vehicles.enums.VehicleType;
 import es.pollitoyeye.vehicles.events.VehiclePickupEvent;
