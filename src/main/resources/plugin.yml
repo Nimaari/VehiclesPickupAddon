@@ -4,4 +4,4 @@ main: tk.nimari.VehiclesPickupAddon
 api-version: 1.14
 depend: [Vehicles]
 authors: [Nimari]
-description: An addon made for the Vehicles plugin that allows for toggling of vehicle pickup.
+description: An addon made for the Minecraft Vehicles plugin that allows for toggling of vehicle pickup.

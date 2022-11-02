@@ -23,7 +23,7 @@ public final class VehiclesPickupAddon extends JavaPlugin {
         saveConfig();
         Bukkit.getPluginManager().registerEvents(new Listeners(), this);
 
-        System.out.println("[VehiclesPickupAddon] Successful startup took " + (System.currentTimeMillis() - currentTime) + "ms.");
+        System.out.println("[VehiclesPickupAddon] Successful startup! Took " + (System.currentTimeMillis() - currentTime) + "ms.");
     }
 
     @Override
